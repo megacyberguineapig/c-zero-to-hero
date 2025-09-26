@@ -1,14 +1,5 @@
-# Lab 0 — Hello World (C-zero-to-hero)
+# C Zero to Hero Learning Journey
 
-🐹 megacyberguineapig begins the journey.
-
-This is my first step learning C (C11). I’m an amateur ethical hacker documenting every lab, starting here with a classic Hello World program. 
-I understand nobody will care about a hello world program, but I would just like to document my learning journey so that others and myself can see my progress. Every step counts and I want it etched in stone.
-
----
-
-Build & Run
-
-make        # build the project (debug mode with sanitizers)
-make run    # run the program
-./helloworld     # or run directly
+I am new to C and programming in general. I am an amateur ethical hacker and I would like to learn C language to get a better understanding of how things work under the hood. I am a natural systems thinker.
+I will document all of my progress including mistakes I've made, pitfalls, and things I've learned to become a better programmer.
+I am using a combination of CHATGPT and resources such as books (Modern C, the C programming language etc) to learn the language.
