@@ -1,8 +1,7 @@
-# Editor
+# Ignore editor settings
 .vscode/
 
-# Build artifacts / binaries
+# Ignore object files and compiled binaries
 *.o
 a.out
-lab1
-Labs/Lab 0/helloworld
+Labs/**/lab*
