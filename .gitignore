@@ -1,0 +1,8 @@
+# Editor
+.vscode/
+
+# Build artifacts / binaries
+*.o
+a.out
+lab1
+Labs/Lab 0/helloworld
