@@ -1,0 +1,9 @@
+gcc -std=c17 -Wall -Wextra -pedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer lab2.c -o lab2 
+lab2.c: In function ‘main’:
+lab2.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   53 |    scanf("char", &op);
+      |          ^~~~~~
+lab2.c:56:1: error: expected declaration or statement at end of input
+   56 | }
+      | ^
+make: *** [Makefile:11: lab2] Error 1
