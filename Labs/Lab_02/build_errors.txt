@@ -1,9 +1,21 @@
 gcc -std=c17 -Wall -Wextra -pedantic -g -fsanitize=address,undefined -fno-omit-frame-pointer lab2.c -o lab2 
 lab2.c: In function ‘main’:
-lab2.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
-   53 |    scanf("char", &op);
-      |          ^~~~~~
-lab2.c:56:1: error: expected declaration or statement at end of input
-   56 | }
+lab2.c:17:19: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   17 |    double ans = (a,op,b);
+      |                   ^
+lab2.c:17:22: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   17 |    double ans = (a,op,b);
+      |                      ^
+lab2.c:59:8: error: incompatible type for argument 1 of ‘printf’
+   59 | printf(ans);
+      |        ^~~
+      |        |
+      |        double
+In file included from lab2.c:7:
+/usr/include/stdio.h:363:43: note: expected ‘const char * restrict’ but argument is of type ‘double’
+  363 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+lab2.c:61:1: error: expected declaration or statement at end of input
+   61 | }
       | ^
 make: *** [Makefile:11: lab2] Error 1
