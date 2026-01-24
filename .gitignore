@@ -5,3 +5,7 @@
 *.o
 a.out
 Labs/**/lab*
+*.o
+*.out
+*.exe
+lab_03A
